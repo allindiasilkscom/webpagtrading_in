@@ -1,0 +1,126 @@
+/* Container for the whole layout */
+.price-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Left and right promotion sections */
+  .promotion-left, .promotion-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Add some padding for better spacing */
+  }
+  
+  /* Make images responsive */
+  .promotion-left img, .promotion-right img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Price table section */
+  .price-table {
+    flex: 2;
+    max-width: 600px; /* Limit the width of the price table */
+    margin: 20px auto; /* Center the table with some margin on top and bottom */
+    background-color: #d1cdcd; /* Background color for better readability */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header text styling */
+  .header-text {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Price table heading */
+  .price-table h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Price table styling */
+  .price-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .price-table th, .price-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .price-table th {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .price-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .price-table td {
+    color: #333;
+    font-size: 1.1em;
+  }
+  
+  /* Contact section styling */
+  .contact-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-section h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .contact-section p {
+    font-size: 1.2em;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .contact-link {
+    color: #25609b; /* Color for links */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .contact-link:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .price-container {
+      flex-direction: column; /* Stack items vertically on small screens */
+      align-items: center;
+    }
+    
+    .promotion-left, .promotion-right {
+      width: 100%;
+      padding: 10px 0;
+      height: 50px; /* Add vertical padding for spacing */
+    }
+  
+    .price-table {
+      width: 100%;
+      max-width: none; /* Allow the table to take full width */
+      margin: 10px 0; /* Adjust margin for smaller screens */
+    }
+  }
+  

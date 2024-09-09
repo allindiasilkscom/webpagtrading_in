@@ -1,0 +1,81 @@
+/* Base styles for all devices */
+.hero-text {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(8,0,58,0.78),rgba(8,0,58,0.78)), url('../../assets/hero.png') no-repeat center;
+  background-size: cover; /* Changed from 40% to cover for better responsiveness */
+  position: relative; /* Changed from absolute to relative for better layout handling */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Ensure text is readable against the background */
+  text-align: center; /* Center-align text */
+  padding: 20px; /* Add some padding for smaller screens */
+}
+
+.description {
+  font-size: 24px; /* Default font size */
+  margin-bottom: 20px; /* Space between text and button */
+}
+
+.cta a {
+  font-size: 18px;
+  color: #007bff; /* Adjust color as needed */
+  text-decoration: none;
+}
+
+.cta a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .description {
+      font-size: 20px;
+  }
+
+  .cta a {
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .description {
+      font-size: 18px;
+  }
+
+  .cta a {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .description {
+      font-size: 16px;
+      margin-bottom: 15px; /* Adjust spacing for smaller screens */
+  }
+
+  .cta a {
+      font-size: 14px;
+  }
+
+  .hero-text {
+      padding: 10px; /* Less padding on smaller screens */
+      background-size: contain; /* Adjust background size */
+  }
+}
+
+@media (max-width: 576px) {
+  .description {
+      font-size: 14px;
+      margin-bottom: 10px; /* Adjust spacing further */
+  }
+
+  .cta a {
+      font-size: 12px;
+  }
+
+  .hero-text {
+      padding: 5px; /* Minimal padding on very small screens */
+  }
+}

@@ -1,0 +1,86 @@
+/* Apply background color and text color to the entire page */
+body {
+  background-color: #e88b00; /* Page background color */
+  color: rgb(51, 50, 50); /* Default text color */
+  margin: 0;
+  font-family: Arial, sans-serif; /* Ensures consistent font styling */
+}
+
+/* Service container styling */
+.service-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  color: rgb(255, 248, 248); /* Text color inside service container */
+}
+
+/* Header section styling */
+.service-header {
+  text-align: center;
+  padding: 20px;
+  background-color: #25609b;
+  border-bottom: 1px solid #c51616;
+}
+
+.service-header h1 {
+  font-size: 2.5em;
+  margin: 0;
+  color: rgb(54, 52, 52); /* Header text color */
+}
+
+.service-header p {
+  font-size: 1.2em;
+  color: #5c5b5b; /* Slightly lighter color for paragraph text */
+}
+
+/* Content section styling */
+.service-content {
+  padding: 20px;
+}
+
+.service-content h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: rgb(94, 92, 92); /* Section heading color */
+}
+
+.service-content p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #3a3939; /* Slightly lighter text color */
+}
+
+.service-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #302f2f; /* List item color */
+}
+
+/* Slider section styling */
+.service-slider {
+  margin-top: 20px;
+}
+
+.service-slider img {
+  width: 20%; /* Make images responsive */
+  height: auto;
+  border-radius: 8px;
+  display: block; /* Ensure images are block elements */
+  margin: 0 auto; /* Center images */
+}
+
+/* Footer section styling */
+.service-footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #25609b;
+  border-top: 1px solid #5c5b5b;
+  margin-top: 20px;
+}
+
+.service-footer p {
+  font-size: 0.9em;
+  color: rgb(65, 64, 64); /* Footer text color */
+}
